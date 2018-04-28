@@ -1,4 +1,4 @@
-Projeto Java 
+Projeto Java STS
 
  - Spring 5
  - JPA
