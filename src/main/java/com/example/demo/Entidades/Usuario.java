@@ -1,8 +1,5 @@
 package com.example.demo.Entidades;
 
-import java.util.List;
-import java.util.Set;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import java.util.Set;
 
 @Entity
 @Table(name="USUARIO")
@@ -29,7 +27,18 @@ public class Usuario {
 	private Set<Perfil> roles;
 	
 	
-
+	
+	public Usuario()
+	{
+		
+	}
+	
+	
+	public Usuario(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
 
 
 	public Long getId() {
@@ -55,10 +64,4 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	
-	
-	
-	
-
 }
